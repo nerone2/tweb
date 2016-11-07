@@ -1,0 +1,164 @@
+	/* Gabriele Martinero 798332 esercizio 2 LAYOUT
+
+			-l'esercizio richiede l'arrangiamento del layout del file skeleton.html appoggiandosi alle slide 04 del corso;
+			 in questo file ho applicato gli strumenti appresi durante il corso al fine di applicare il corretto layout richiesto dalla consegna 
+			 
+
+		*/
+
+body{
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/2/background.png");
+	font: 8pt "Verdana", "Tahoma", sans-serif; 
+	margin: 0;
+}
+
+
+h1{	
+	font: 24pt "Tahoma", "Verdana", sans-serif; 
+	font-style: bold;
+	text-shadow: 3px 3px #999999;
+	text-align: center;
+}
+/* immagine in alto alla pagina*/
+#header_image{
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/2/bannerbg.png");
+	background-repeat: repeat-x;
+	height: 50px;
+	text-align: center;
+
+}
+
+/* blocco a sinistra nel riquadro(Review_block) della recensione contenente i commenti dei recensori*/
+#rotten_classification{
+	float: left;
+	overflow: hidden;
+	width: 550px;
+}
+
+/*prima colonna di commenti*/
+#first_column{
+	float: left;
+	padding-left: 2%;
+	margin-right: 2%;
+	width: 47%;
+}
+
+/*seconda colonna di commenti*/
+#second_column{
+	float:left;
+	padding-right: 2%;
+	width: 47%;
+}
+
+/* blocco a destra del riquadro(Review_block) della recensione contenente la descrizione del film*/
+#movie_description{
+	background-color: #A2B964;
+	float: right;
+	overflow: hidden;
+	width: 250px;	
+}
+
+
+#movie_description #text_description{
+	padding: 10pt; 
+	font-style: "Arial", sans-serif;
+}
+
+DIV dl > dt{
+	font-weight: bold;
+}
+
+DIV dl > dd{
+	padding-bottom: 10pt;
+}
+
+#links dl > dd{
+	padding-bottom: 0pt;
+}
+/*fine blocco movie description
+
+
+/* blocco principale contenente la recensione del film*/
+#main_block{
+	border-radius: 25px;
+    border: 4px solid grey;
+  	margin:auto;
+ 	width: 800px;
+ 	overflow: hidden;
+ 	height: 100%;
+}
+
+/* blocco contenente le due sezione movie_description e movie_score*/
+#Review_block{
+	float: left;
+}
+
+
+/* blocco in alto al riquadro(Review_block) della recensione contenente il punteggio del film*/
+#movie_score{
+	height: 83px;
+	overflow: hidden;
+	background-image: url("http://www.cs.washington.edu/education/courses/cse190m/11sp/homework/2/rbg.png");
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+
+#movie_score img{
+	float: left;
+	vertical-align: bottom;
+}
+
+#movie_score p{
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+	float: left;
+	margin: 0;
+}
+/*fine blocco contenente punteggio*/
+
+#footer{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 800px;
+	padding: 5px;
+	float: right;
+	background-color: #A2B964;
+	margin-bottom: 0px;
+}
+
+.comments p{
+	font-size: 8pt;
+	font-weight: bold;
+	background-color: #E8DC9B;
+	border-radius: 10px;
+    border: 2px solid grey;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.comments img{
+	float: left;
+	padding-right: 5px;
+}
+
+.authors img{
+	float: left;
+	padding-right: 5px;
+	
+}
+
+#reviewer_block{
+	overflow: hidden;
+	margin-bottom: 20pt;
+}
+.authors p{
+	font-style: italic; 
+}
+#validators{
+	position: fixed;
+	right: 0;
+	bottom:0; 
+	opacity: 0.5;
+}
